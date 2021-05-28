@@ -1,7 +1,8 @@
-var btn = document.getElementById('buttonId');
-var value = parseInt(btn.value, 10);
-            
+var btn = document.getElementById("buttonId");
+
 btn.onclick = function() {
-    value++;
-    btn.value = value;
+    var value = parseInt(btn.innerHTML, 10);
+    btn.innerHTML = value + 1;
 }
+
+
